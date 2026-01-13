@@ -1,0 +1,36 @@
+1. Challenges with single cell data and how PPI resolves it
+1.1.what single cell data
+1.2. zero inflation nature – causes and effects 
+1.3. Excisting techniques to resolve it 
+1.4. What is PPI networks, how it improves 
+
+2. ScNET – a high level introduction
+	* Data Processing
+	* Auto Encoder architecture
+		* Encoder
+		* Graph Convolution Layer
+		* Graph Attention Layer
+		* KNN graph Pruning using attention Coefficcients
+
+3. ScNET – applications of cell and gene embeddings, Pruned KNN graph, reconstructed cell x gene expression
+
+3.1. Gene embeddings captures better functional annotation
+	 * Aim here
+	* embedding space correlation with known biological annotation and function -> how they have done
+	*  Evaluation of functional annotation by clustering genes.
+	*  embeddings capturing Functional information.
+3.2. Coembedded Network captures biological pathways.
+	 * Aim here
+	* whats coembedded network
+	* experiment in Malaria associated Bcells.
+3.3. Evaluation of cell clustering.
+	* Aim here
+	* dataset used  - uskosin  what is it - ability to refine cell-cell similarity – here USL approaches outshined Foundation models - analysis on the on the recorded clusters
+	* distribution of attention coefficients
+	* analysis on cell cycle dataset – ARI used for performance calculation
+3.4. ScNET reduces zero inflation and improves pathway analysis
+	* Aim here   
+	* is it capturing the expression dynamics of different cell population – GL261a mouse brain tumor model dataset- Analysis on the results  
+	* AUPR of marker gene expression performance wrt other methods.
+	* Quality of differential gene expression anlaysis for reconstructed gene expression data – Analysis
+	* Differential dynamics within the same population under different biological conditions -Analysis
